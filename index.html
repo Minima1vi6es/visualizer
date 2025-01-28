@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encryption Visualizer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Encryption Visualizer</h1>
+        <p>Type some text below and choose an encryption algorithm to see how it works:</p>
+        
+        <textarea id="text-input" placeholder="Enter text here..."></textarea>
+        
+        <label for="algorithm-select">Choose Algorithm:</label>
+        <select id="algorithm-select">
+            <option value="caesar">Caesar Cipher</option>
+            <option value="base64">Base64</option>
+        </select>
+
+        <button onclick="encryptText()">Encrypt</button>
+
+        <div id="output" style="display: none;">
+            <h2>Results</h2>
+            <p><strong>Algorithm:</strong> <span id="selected-algorithm"></span></p>
+            <p><strong>Encrypted Text:</strong> <span id="encrypted-text"></span></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
