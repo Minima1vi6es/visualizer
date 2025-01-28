@@ -10,13 +10,17 @@
     <div class="container">
         <h1>Encryption Visualizer</h1>
         <p>Type some text below and choose an encryption algorithm to see how it works:</p>
-        
+
         <textarea id="text-input" placeholder="Enter text here..."></textarea>
-        
+
         <label for="algorithm-select">Choose Algorithm:</label>
         <select id="algorithm-select">
             <option value="caesar">Caesar Cipher</option>
             <option value="base64">Base64</option>
+            <option value="reverse">Reverse Cipher</option>
+            <option value="rot13">ROT13 Cipher</option>
+            <option value="vigenere">Vigenère Cipher</option>
+            <option value="hex">Hexadecimal Encoding</option>
         </select>
 
         <button onclick="encryptText()">Encrypt</button>
